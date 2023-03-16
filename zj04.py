@@ -21,7 +21,7 @@ class UserOut(BaseModel):
 @app.post("/user/", response_model=UserOut)
 async def create_user(user: UserIn) -> Any:
     return user
-#
+
 # class Item(BaseModel):
 #     name: str
 #     description: Union[str, None] = None
